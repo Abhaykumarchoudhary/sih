@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Map Search</title>
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+</head>
+<body>
+    <header>
+        <h1>Indian Map Search</h1>
+    </header>
+    <main>
+        <div class="search-container">
+            <div class="text-xl font-medium">
+                <table>
+                    <tr>
+                        <td>
+                             <p class="pb-4">Select the State / U.T. :</p>
+                <select id="state" onchange="popdistricts()" class="w-full rounded-md">
+                    <option>Select ...</option>
+                    <option value="1">Andaman and Nicobar Islands (U.T.)</option>
+                    <option value="2">Andhra Pradesh</option>
+                    <option value="3">Arunachal Pradesh</option>
+                    <option value="4">Assam</option>
+                    <option value="5">Bihar</option>
+                    <option value="6">Chandigarh (U.T.)</option>
+                    <option value="7">Chhattisgarh</option>
+                    <option value="8">Dadra and Nagar Haveli andDaman & Diu (U.T.)</option>
+                    <option value="9">Delhi (U.T.)</option>
+                    <option value="10">Goa</option>
+                    <option value="11">Gujarat</option>
+                    <option value="12">Haryana</option>
+                    <option value="13">Himachal Pradesh</option>
+                    <option value="14">Jammu & Kashmir (U.T.)</option>
+                    <option value="15">Jharkhand</option>
+                    <option value="16">Karnataka</option>
+                    <option value="17">Kerala</option>
+                    <option value="18">Ladakh (U.T.)</option>
+                    <option value="19">Lakshadweep (U.T.)</option>
+                    <option value="20">Madhya Pradesh</option>
+                    <option value="21">Maharashtra</option>
+                    <option value="22">Manipur</option>
+                    <option value="23">Meghalaya</option>
+                    <option value="24">Mizoram</option>
+                    <option value="25">Nagaland</option>
+                    <option value="26">Odisha</option>
+                    <option value="27">Puducherry (U.T.)</option>
+                    <option value="28">Punjab</option>
+                    <option value="29">Rajasthan</option>
+                    <option value="30">Sikkim</option>
+                    <option value="31">Tamil Nadu</option>
+                    <option value="32">Telangana</option>
+                    <option value="33">Tripura</option>
+                    <option value="34">Uttarakhand</option>
+                    <option value="35">Uttar Pradesh</option>
+                    <option value="36">West Bengal</option>
+                </select>
+                        </td>
+                        <td>
+                             <p class="py-4">Select the district : </p>
+                <select id="district" class="w-full rounded-md">
+                    <option disabled>---select---</option>
+                </select>
+                <button
+                    class="bg-orange-500 border-2 border-black w-full py-3 mt-20 rounded-lg text-2xl font-bold text-white">Search</button>
+                        </td>
+                    </tr>
+                </table>
+               
+               
+            </div>
+        </div>
+        <div id="map" class="map"></div>
+        <!-- <div id="description" class="description"></div> -->
+    </main>
+    <footer>
+        <p>&copy; 2024 Indian Map Search. All rights reserved.</p>
+    </footer>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="test.js"></script>
+    <script src="json.js"></script>
+</body>
+</html>
